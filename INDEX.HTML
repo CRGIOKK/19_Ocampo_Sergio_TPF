@@ -1,0 +1,162 @@
+<!-- TRABAJO DE OCAMPO SERGIO -- 3RO BTI -- 19 EN LA LISTA -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoo Events</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos*/
+    body {
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #343a40 !important;
+    }
+    .navbar-brand, .nav-link {
+      color: #ffffff !important;
+    }
+    .event-card {
+      transition: transform 0.2s;
+    }
+    .event-card:hover {
+      transform: translateY(-5px);
+    }
+    .card {
+      background-image: url(/zoo.jpg);
+      color: black;
+      text-align: center;
+      width: 100%;
+    }
+    .card-title{
+      color: black;
+    }
+    .visitor-info-container {
+      background-color: #e9ecef;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    .visitor-info-heading {
+      color: #343a40;
+      font-weight: bold;
+    }
+    .visitor-info-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    .visitor-info-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(0,0,0,.125);
+    }
+    .rules-info {
+      background-color: #fff3cd;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    .rules-info h3 {
+      color: #856404;
+    }
+  </style>
+
+
+
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Zoo Events</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#upcoming-exhibits">Próximas Exhibiciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#past-exhibits">Exhibiciones Pasadas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#visitor-info">Información para Visitantes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección de Próximas Exhibiciones -->
+  <section id="upcoming-exhibits" class="py-5">
+    <div class="container">
+      <h2 class="display-4 text-center mb-5">Próximas Exhibiciones del Zoológico</h2>
+      <div class="card event-card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Jirafas en la Pradera</h5>
+          <p class="card-text">Ven a ver a nuestras majestuosas jirafas en su hábitat natural.</p>
+          <p class="card-text">Fecha: 20 de junio de 2024</p>
+          <p class="card-text">Ubicación: Área de Jirafas</p>
+          <a href="#" class="btn btn-primary">Más detalles</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Exhibiciones Pasadas -->
+  <section id="past-exhibits" class="bg-light py-5">
+    <div class="container">
+      <h2 class="display-4 text-center mb-5">Exhibiciones Pasadas del Zoológico</h2>
+      <div class="card event-card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Leones en Acción</h5>
+          <p class="card-text">Revive la emoción de ver a nuestros leones en acción durante su hora de alimentación.</p>
+          <p class="card-text">Fecha: 15 de mayo de 2024</p>
+          <p class="card-text">Ubicación: Área de Leones</p>
+          <a href="#" class="btn btn-primary">Más detalles</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Información para Visitantes -->
+  <section id="visitor-info" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="visitor-info-container">
+            <h2 class="visitor-info-heading text-center mb-4">Información para Visitantes del Zoológico</h2>
+            <ul class="visitor-info-list">
+              <li><strong>Horarios de Apertura:</strong></li>
+              <li>Lunes a Viernes: 9:00 AM - 5:00 PM</li>
+              <li>Sábado y Domingo: 10:00 AM - 6:00 PM</li>
+            </ul>
+            <ul class="visitor-info-list">
+              <li><strong>Tarifas de Entrada:</strong></li>
+              <li>Adultos: 15.000 Gs </li>
+              <li>Niños (3-12 años): 10.000 Gs </li>
+              <li>Menores de 3 años: Gratis </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="rules-info">
+            <h3 class="text-center mb-4">Reglas del Zoológico</h3>
+            <ul class="list-group">
+              <li class="list-group-item">No alimentes a los animales.</li>
+              <li class="list-group-item">Mantén a los niños bajo supervisión en todo momento.</li>
+              <li class="list-group-item">Respeta la vida silvestre y su hábitat.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-- TRABAJO DE OCAMPO SERGIO -- 3RO BTI-- 19 EN LA LISTA -->
